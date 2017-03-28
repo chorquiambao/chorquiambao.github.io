@@ -7832,5 +7832,12 @@ hr.shadowDown {
     word-spacing: 1px;
 }
 
-    
-/*/////////////////////// End ///////////////////////////////*/    
+ gwd-youtube{
+    width: 970px;
+    height: 250px;
+ }   
+/*.navbar-brand > img {
+    top: 12%;
+    position: absolute;
+    height: 80  %;
+}*/
