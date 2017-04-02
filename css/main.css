@@ -7831,8 +7831,7 @@ hr.shadowDown {
     margin: 0;
     word-spacing: 1px;
 }
-/*  timeline
-/*----------------------------------------------------*/
+
 .timeline {
     position: relative;
     padding:4px 0 0 0;
@@ -8094,10 +8093,4 @@ hr.shadowDown {
 }
 h4 {
     font-family: 'Roboto Slab', serif;
-}
-
-#timeline .section-title{
-    font-size: 35px;
-    font-weight: 800;
-    margin-bottom: 35px;
 }
