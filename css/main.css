@@ -8094,3 +8094,9 @@ hr.shadowDown {
 h4 {
     font-family: 'Roboto Slab', serif;
 }
+#timeline .section-title{
+
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
