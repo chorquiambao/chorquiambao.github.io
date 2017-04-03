@@ -112,6 +112,7 @@
       height: 250px;
       left: 0px;
       top: 0px;
+      opacity: 0;
     }
     .gwd-img-32h8 {
       position: absolute;
@@ -574,8 +575,8 @@
       transform-style: preserve-3d;
       height: 100%;
       width: 100%;
-      left: 0%;
       top: 0%;
+      left: 0%;
     }
     .gwd-img-1r9v {
       display: block;
@@ -639,7 +640,7 @@
       max-width: 700px;
       max-height: 500px;
       background-image: none;
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(0, 0, 0);
     }
     .gwd-div-1o6b {
       position: absolute;
@@ -690,7 +691,7 @@
       left: 0%;
       top: 0%;
       background-image: none;
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(0, 0, 0);
     }
     .gwd-div-106o {
       position: absolute;
@@ -731,7 +732,7 @@
       max-width: 600px;
       max-height: 600px;
       background-image: none;
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(0, 0, 0);
     }
     .gwd-div-178j {
       position: absolute;
@@ -896,6 +897,8 @@
       height: 100%;
       left: 0%;
       top: 0%;
+      background-image: none;
+      background-color: transparent;
     }
     .gwd-carouselgallery-1tcv {
       position: absolute;
@@ -1181,6 +1184,19 @@
       height: 100%;
       width: 100%;
     }
+    .gwd-span-1rmi {
+      border-style: double;
+      visibility: visible;
+      opacity: 0;
+      transform-style: preserve-3d;
+      font-family: "Roboto Slab";
+      border-color: transparent;
+      border-image-source: none;
+      font-size: 15px;
+      left: -24px;
+      transform: translate3d(106px, 6px, 0px);
+      background-color: rgba(0, 0, 0, 0.619608);
+    }
     @media not all {
       .desktop-logoContainer-css {
         width: 12.33%;
@@ -1216,29 +1232,73 @@
         height: 290px !important;
       }
     }
-    .gwd-span-ng1e {
-      left: 13px;
-      top: 12px;
-      border-style: double;
-      border-color: rgb(118, 4, 4);
-      border-image-source: none;
+    @keyframes gwd-gen-o27pgwdanimation_gwd-keyframes {
+      0% {
+        opacity: 0;
+        animation-timing-function: ease-in-out;
+      }
+      100% {
+        opacity: 1;
+        animation-timing-function: linear;
+      }
     }
-    .gwd-span-1rmi {
-      border-style: double;
-      border-image-source: none;
-      border-color: rgb(137, 4, 4);
+    #banner-page.gwd-play-animation .gwd-gen-o27pgwdanimation {
+      animation: gwd-gen-o27pgwdanimation_gwd-keyframes 1.008s linear 0.993s 1 normal forwards;
     }
-    .gwd-span-175l {
-      left: 230px;
-      top: 289px;
+    .gwd-div-etyj {
+      position: absolute;
+      width: 300px;
+      height: 250px;
+      left: 0px;
+      top: 0px;
+      background-image: none;
+      background-color: rgb(0, 0, 0);
     }
-    .gwd-span-zveo {
-      font-size: 20px;
-      left: 120px;
-      top: 161px;
+    @keyframes gwd-gen-1cqegwdanimation_gwd-keyframes {
+      0% {
+        opacity: 0;
+        animation-timing-function: linear;
+      }
+      100% {
+        opacity: 1;
+        animation-timing-function: linear;
+      }
     }
-    .gwd-a-11t7 {
-      color: rgb(244, 244, 245);
+    #banner-page.gwd-play-animation .gwd-gen-1cqegwdanimation {
+      animation: gwd-gen-1cqegwdanimation_gwd-keyframes 1.006s linear 0s 1 normal forwards;
+    }
+    .gwd-span-1yzs {
+      transform: translate3d(37px, -160px, 0px);
+    }
+    @keyframes gwd-empty-animation {
+      0% {
+        opacity: 0.001;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    @keyframes gwd-gen-1w2bgwdanimation_gwd-keyframes {
+      0% {
+        opacity: 0;
+        animation-timing-function: linear;
+      }
+      100% {
+        opacity: 1;
+        animation-timing-function: linear;
+      }
+    }
+    .gwd-play-animation #desk-wrap .gwd-gen-1w2bgwdanimation {
+      animation: gwd-gen-1w2bgwdanimation_gwd-keyframes 1.013s linear 0s 1 normal forwards;
+    }
+    .gwd-span-1sk0 {
+      opacity: 1;
+    }
+    .gwd-span-ifs0 {
+      transform: translate3d(321px, 116px, 0px);
+    }
+    .gwd-span-s7s7 {
+      transform: translate3d(188px, -13px, 0px);
     }
   </style>
   <link href="gwdpage_style.css" data-version="8" data-exports-type="gwd-page" rel="stylesheet">
@@ -1249,6 +1309,7 @@
   <link href="gwddoubleclick_style.css" data-version="14" data-exports-type="gwd-doubleclick" rel="stylesheet">
   <link href="gwdtaparea_style.css" data-version="4" data-exports-type="gwd-taparea" rel="stylesheet">
   <link href="gwdpagedeck_style.css" data-version="9" data-exports-type="gwd-pagedeck" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css">
   <script data-source="googbase_min.js" data-version="3" data-exports-type="googbase" type="text/javascript" src="googbase_min.js"></script>
   <script data-source="gwd_webcomponents_min.js" data-version="5" data-exports-type="gwd_webcomponents" type="text/javascript" src="gwd_webcomponents_min.js"></script>
   <script data-source="gwdpage_min.js" data-version="8" data-exports-type="gwd-page" type="text/javascript" src="gwdpage_min.js"></script>
@@ -1310,19 +1371,19 @@
     <div is="gwd-pagedeck" class="gwd-page-container" id="pagedeck" default-page="banner-page" data-gwd-offset-top="0px" data-gwd-offset-left="0px">
       <div is="gwd-page" id="banner-page" data-gwd-name="Banner page" class="gwd-page-wrapper banner gwd-lightbox gwd-div-1t35" data-gwd-width="300px" data-gwd-height="250px" centered="">
         <div class="gwd-page-content banner">
-          <div class="gwd-div-wlee" id="collapsedBg" data-gwd-tl-hidden="" data-gwd-tl-locked="">
+          <div class="gwd-div-etyj"></div>
+          <div class="gwd-div-wlee gwd-gen-1cqegwdanimation" id="collapsedBg">
             <img is="gwd-image" source="assets/bg_300x250.png" id="gwd-image_1" class="gwd-img-32h8">
-          </div>
-          <span class="gwd-span-a3ty gwd-gen-14jggwdanimation gwd-span-1rmi" id="hoverTxt" contenteditable="true">HOVER TO EXPAND</span>
-          <gwd-taparea id="expand-button" class="expand-button" data-gwd-tl-hidden="" data-gwd-tl-locked=""></gwd-taparea>
-          <div class="gwd-div-prst" id="collapsedBorder" data-gwd-tl-hidden="" data-gwd-tl-locked=""></div>
+          </div><span class="gwd-span-a3ty gwd-gen-14jggwdanimation gwd-span-1rmi gwd-gen-o27pgwdanimation" id="hoverTxt">HOVER TO EXPAND</span>
+          <gwd-taparea id="expand-button" class="expand-button" data-gwd-tl-locked="" data-gwd-tl-hidden=""></gwd-taparea>
+          <div class="gwd-div-prst" id="collapsedBorder" data-gwd-tl-locked="" data-gwd-tl-hidden=""></div>
         </div>
       </div>
       <div is="gwd-page" id="desktop" expanded="" data-gwd-name="" class="gwd-page-wrapper expanded gwd-lightbox desktop-page-css gwd-div-eo1g" data-gwd-width="1000px" data-gwd-height="600px" fullscreen="" centered="">
         <div class="gwd-page-content expanded desktop-content-css">
           <div class="desktop-wrap-css" id="desk-wrap">
-            <img class="gwd-img-1nde" is="gwd-image" id="gwd-image_23" source="/assets/avengers2-1000x600.jpg" data-gwd-tl-hidden="" data-gwd-tl-locked="">
-            <div class="gwd-div-mi2w" id="imageGalleryContainer-wrap">
+            <img class="gwd-img-1nde" is="gwd-image" id="gwd-image_23" source="/assets/avengers2-1000x600.jpg" scaling="cover" data-gwd-tl-hidden="" data-gwd-tl-locked="">
+            <div class="gwd-div-mi2w" id="imageGalleryContainer-wrap" data-gwd-tl-hidden="" data-gwd-tl-locked="">
               <div class="gwd-div-dywl" id="IGContainer-wrap">
                 <div class="gwd-div-1vh0" id="imageGalleryBg"></div>
                 <gwd-carouselgallery id="cg" scaling="contain" class="gwd-carouselgallery-116a" data-gwd-name="cg" images="assets/img1_1.jpg,assets/img2_1.jpg,assets/img3_1.jpg,assets/img4_1.jpg" neighbor-rotation-y="15" frame-width="290" neighbor-translation-x="5" neighbor-translation-y="1"
@@ -1354,33 +1415,33 @@
                 <gwd-taparea id="gwd-taparea_6" class="gwd-taparea-y012" data-gwd-tl-hidden=""></gwd-taparea>
               </div>
             </div>
-            <span class="gwd-span-a3ty gwd-gen-14jggwdanimation gwd-span-ng1e" id="hoverTxt_1" style="cursor: pointer;"><a href="https://chorquiambao.github.io" class="gwd-a-11t7" style="color: rgb(244, 244, 245);">BACK TO HOME PAGE</a></span>
+            <a href="https://chorquiambao.github.io/"><span class="gwd-span-a3ty gwd-gen-14jggwdanimation gwd-span-1rmi gwd-span-1yzs gwd-gen-1w2bgwdanimation" id="hoverTxt_5" style="cursor: pointer;">BACK TO HOMEPAGE<br></span></a>
           </div>
         </div>
       </div>
       <div is="gwd-page" id="tablet_landscape" expanded="" data-gwd-name="" class="gwd-page-wrapper expanded gwd-lightbox tablet-landscape-page-css gwd-div-12mn" data-gwd-width="1024px" data-gwd-height="768px" fullscreen="" centered="">
         <div class="gwd-page-content expanded tablet-landscape-content-css">
           <div class="tablet-landscape-wrap-css" id="tablet-landscape-wrap">
-            <img class="gwd-img-1o5p" is="gwd-image" id="gwd-image_24" source="/assets/avengers2-1000x600.jpg">
+            <img class="gwd-img-1o5p" is="gwd-image" id="gwd-image_24" source="/assets/avengers2-1000x600.jpg" scaling="cover">
             <div class="gwd-div-1frg gwd-gen-n163gwdanimation" id="tablet-landscape-imageGalleryContainer-wrap">
               <div class="gwd-div-vb8m gwd-gen-5oqagwdanimation" id="tablet-landscape-IGContainer-wrap">
                 <div class="gwd-div-olx3 gwd-gen-1jaggwdanimation" id="tablet-landscape-imageGalleryBg"></div>
                 <gwd-carouselgallery id="tablet-landscape-cg" scaling="contain" class="gwd-carouselgallery-uca3 gwd-gen-nz05gwdanimation" data-gwd-name="tablet-landscape-cg" images="assets/img1_2.jpg,assets/img2_2.jpg,assets/img3_2.jpg,assets/img4_2.jpg" neighbor-rotation-y="15"
                 neighbor-translation-x="90" clamp-frame-size-to-image="false"></gwd-carouselgallery>
-                <div class="gwd-div-1o6b gwd-gen-1ujpgwdanimation" id="tablet-landscape-leftArrowContainer">
+                <div class="gwd-div-1o6b gwd-gen-1ujpgwdanimation" id="tablet-landscape-leftArrowContainer" data-gwd-tl-hidden="" data-gwd-tl-locked="">
                   <img is="gwd-image" source="assets/leftOn.png" id="tablet-landscape-leftOn" class="tablet-landscape-leftOn-css gwd-gen-pefpgwdanimation">
                   <img is="gwd-image" source="assets/leftOff.png" id="tablet-landscape-leftOff" class="tablet-landscape-leftOff-css gwd-gen-1crwgwdanimation">
                   <gwd-taparea id="gwd-taparea_16" class="tablet-taparea-16-css gwd-gen-1sodgwdanimation" data-gwd-tl-hidden=""></gwd-taparea>
                 </div>
-                <div class="gwd-div-1gah gwd-gen-12x7gwdanimation" id="tablet-landscape-rightArrowContainer">
+                <div class="gwd-div-1gah gwd-gen-12x7gwdanimation" id="tablet-landscape-rightArrowContainer" data-gwd-tl-hidden="" data-gwd-tl-locked="">
                   <img is="gwd-image" source="assets/rightOn.png" id="tablet-landscape-rightOn" class="tablet-landscape-rightOn-css gwd-gen-1904gwdanimation">
                   <img is="gwd-image" source="assets/rightOff.png" id="tablet-landscape-rightOff" class="tablet-landscape-rightOff-css gwd-gen-1cgqgwdanimation">
                   <gwd-taparea id="gwd-taparea_17" class="tablet-taparea-17-css gwd-gen-v7zvgwdanimation" data-gwd-tl-hidden=""></gwd-taparea>
                 </div>
               </div>
             </div>
-            <div class="gwd-div-dcyo" id="tablet-landscape-expandedBorder"></div>
-            <div class="gwd-div-7vt3 gwd-gen-fbz5gwdanimation" id="tablet-landscape-socialContainer">
+            <div class="gwd-div-dcyo" id="tablet-landscape-expandedBorder" data-gwd-tl-hidden="" data-gwd-tl-locked=""></div>
+            <div class="gwd-div-7vt3 gwd-gen-fbz5gwdanimation" id="tablet-landscape-socialContainer" data-gwd-tl-hidden="" data-gwd-tl-locked="">
               <div class="gwd-div-w2a7 gwd-gen-mb7ngwdanimation" id="tablet-landscape-twitterExit">
                 <img is="gwd-image" source="assets/twt.png" id="gwd-image_10" class="gwd-img-cy5i gwd-gen-mbh6gwdanimation">
                 <gwd-taparea id="gwd-taparea_13" class="gwd-taparea-d62y gwd-gen-futxgwdanimation" data-gwd-tl-hidden=""></gwd-taparea>
@@ -1395,13 +1456,13 @@
               </div>
             </div>
           </div>
-          <span class="gwd-span-a3ty gwd-gen-14jggwdanimation gwd-span-ng1e" id="hoverTxt_2" style="cursor: pointer;"><a href="https://chorquiambao.github.io">BACK TO HOME PAGE</a></span>
+          <a href="https://chorquiambao.github.io/"><span class="gwd-span-a3ty gwd-gen-14jggwdanimation gwd-span-1rmi gwd-span-1yzs gwd-span-1sk0" id="hoverTxt_6" style="cursor: pointer;">BACK TO HOMEPAGE<br></span></a>
         </div>
       </div>
       <div is="gwd-page" id="tablet_portrait" expanded="" data-gwd-name="tablet_portrait" class="gwd-page-wrapper expanded gwd-lightbox tablet-portrait-page-css gwd-div-1v3z" data-gwd-width="768px" data-gwd-height="1024px" fullscreen="" centered="">
         <div class="gwd-page-content expanded tablet-portrait-content-css">
           <div class="tablet-portrait-wrap-css" id="tablet-portrait-wrap">
-            <img class="gwd-img-p1xy" is="gwd-image" id="gwd-image_25" source="/assets/avengers2-1000x600.jpg">
+            <img class="gwd-img-p1xy" is="gwd-image" id="gwd-image_25" source="/assets/avengers2-1000x600.jpg" scaling="cover" data-gwd-tl-hidden="" data-gwd-tl-locked="">
             <div class="gwd-div-fam9" id="tablet-portrait-imageGalleryContainer-wrap">
               <div class="gwd-div-190e" id="tablet-portrait-IGContainer-wrap">
                 <div class="gwd-div-1amk" id="tablet-portrait-imageGalleryBg"></div>
@@ -1419,7 +1480,7 @@
                 </div>
               </div>
             </div>
-            <div class="gwd-div-13ti" id="tablet-portrait-socialContainer">
+            <div class="gwd-div-13ti" id="tablet-portrait-socialContainer" data-gwd-tl-hidden="" data-gwd-tl-locked="">
               <div class="gwd-div-8fge" id="tablet-portrait-twitterExit">
                 <img is="gwd-image" source="assets/twt.png" id="gwd-image_20" class="gwd-img-pj3j">
                 <gwd-taparea id="gwd-taparea_29" class="gwd-taparea-sjxa" data-gwd-tl-hidden=""></gwd-taparea>
@@ -1433,33 +1494,33 @@
                 <gwd-taparea id="gwd-taparea_31" class="gwd-taparea-1b7q" data-gwd-tl-hidden=""></gwd-taparea>
               </div>
             </div>
-            <div class="gwd-div-1t2l" id="tablet-portrait-expandedBorder"></div>
+            <div class="gwd-div-1t2l" id="tablet-portrait-expandedBorder" data-gwd-tl-hidden="" data-gwd-tl-locked=""></div>
           </div>
-          <span class="gwd-span-a3ty gwd-gen-14jggwdanimation gwd-span-ng1e gwd-span-175l" id="hoverTxt_3" contenteditable="true" style="cursor: pointer;">BACK TO HOME PAGE</span>
+          <a href="https://chorquiambao.github.io/"><span class="gwd-span-a3ty gwd-gen-14jggwdanimation gwd-span-1rmi gwd-span-1yzs gwd-span-1sk0 gwd-span-ifs0" id="hoverTxt_7" style="cursor: pointer;">BACK TO HOMEPAGE<br></span></a>
         </div>
       </div>
       <div is="gwd-page" id="mobile" expanded="" data-gwd-name="" class="gwd-page-wrapper expanded gwd-lightbox mobile-page-css gwd-div-a8hg" data-gwd-width="480px" data-gwd-height="480px" fullscreen="" centered="">
         <div class="gwd-page-content expanded mobile-content-css">
           <div class="mobile-wrap-css" id="mobile-wrap">
-            <img class="gwd-img-1qew" is="gwd-image" id="gwd-image_26" source="/assets/avengers2-1000x600.jpg">
+            <img class="gwd-img-1qew" is="gwd-image" id="gwd-image_26" source="/assets/avengers2-1000x600.jpg" scaling="cover" data-gwd-tl-hidden="" data-gwd-tl-locked="">
             <div class="gwd-div-4vzz" id="mobile-imageGalleryContainer-wrap">
               <div class="gwd-div-rvp3" id="mobile-IGContainer-wrap">
-                <div class="gwd-div-17cv" id="mobile-imageGalleryBg" data-gwd-tl-locked=""></div>
+                <div class="gwd-div-17cv" id="mobile-imageGalleryBg"></div>
                 <gwd-carouselgallery id="mobile-portrait-cg" scaling="contain" class="gwd-carouselgallery-migv" data-gwd-name="mobile-portrait-cg" images="assets/img1_4.jpg,assets/img2_4.jpg,assets/img3_4.jpg,assets/img4_4.jpg" neighbor-rotation-y="15" transition-duration="300"
-                navigation-thumbnails="" frame-width="200" neighbor-translation-x="60" neighbor-translation-y="5" frame-height="200" data-gwd-tl-locked="" clamp-frame-size-to-image="false"></gwd-carouselgallery>
-                <div class="gwd-div-106o" id="mobile-leftArrowContainer" data-gwd-tl-locked="">
+                navigation-thumbnails="" frame-width="200" neighbor-translation-x="60" neighbor-translation-y="5" frame-height="200" clamp-frame-size-to-image="false"></gwd-carouselgallery>
+                <div class="gwd-div-106o" id="mobile-leftArrowContainer" data-gwd-tl-locked="" data-gwd-tl-hidden="">
                   <img is="gwd-image" source="assets/leftOn.png" id="mobile-leftOn" class="mobile-leftOn-css">
                   <img is="gwd-image" source="assets/leftOff.png" id="mobile-leftOff" class="mobile-leftOff-css">
                   <gwd-taparea id="gwd-taparea_24" class="mobile-taparea-24-css" data-gwd-tl-hidden=""></gwd-taparea>
                 </div>
-                <div class="gwd-div-1p1a" id="mobile-rightArrowContainer" data-gwd-tl-locked="">
+                <div class="gwd-div-1p1a" id="mobile-rightArrowContainer" data-gwd-tl-locked="" data-gwd-tl-hidden="">
                   <img is="gwd-image" source="assets/rightOn.png" id="mobile-rightOn" class="mobile-rightOn-css">
                   <img is="gwd-image" source="assets/rightOff.png" id="mobile-rightOff" class="mobile-rightOff-css">
                   <gwd-taparea id="gwd-taparea_25" class="mobile-taparea-25-css" data-gwd-tl-hidden=""></gwd-taparea>
                 </div>
               </div>
             </div>
-            <div class="gwd-div-1mbs" id="mobile-socialContainer">
+            <div class="gwd-div-1mbs" id="mobile-socialContainer" data-gwd-tl-hidden="" data-gwd-tl-locked="">
               <div class="gwd-div-1vq6" id="mobile-twitterExit">
                 <img is="gwd-image" source="assets/twt.png" id="gwd-image_15" class="gwd-img-1qxq">
                 <gwd-taparea id="gwd-taparea_21" class="gwd-taparea-z9dx" data-gwd-tl-hidden=""></gwd-taparea>
@@ -1473,9 +1534,9 @@
                 <gwd-taparea id="gwd-taparea_23" class="gwd-taparea-ws39" data-gwd-tl-hidden=""></gwd-taparea>
               </div>
             </div>
-            <div class="gwd-div-ta60" id="mobile-expandedBorder"></div>
+            <div class="gwd-div-ta60" id="mobile-expandedBorder" data-gwd-tl-hidden="" data-gwd-tl-locked=""></div>
           </div>
-          <span class="gwd-span-a3ty gwd-gen-14jggwdanimation gwd-span-ng1e gwd-span-zveo" id="hoverTxt_4" style="cursor: pointer;">BACK TO HOME PAGE</span>
+          <a href="https://chorquiambao.github.io/"><span class="gwd-span-a3ty gwd-gen-14jggwdanimation gwd-span-1rmi gwd-span-1yzs gwd-span-1sk0 gwd-span-s7s7" id="hoverTxt_8" style="cursor: pointer;">BACK TO HOMEPAGE<br></span></a>
         </div>
       </div>
     </div>
