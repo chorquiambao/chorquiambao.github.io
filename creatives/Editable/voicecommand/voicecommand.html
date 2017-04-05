@@ -161,10 +161,6 @@
   <script data-source="https://www.gstatic.com/ads/ci/voicecontrolledvideo/1/voicecontrolledvideo_min.js" data-exports-type="ci-voice-controlled-video" src="https://www.gstatic.com/ads/ci/voicecontrolledvideo/1/voicecontrolledvideo_min.js"></script>
   <script type="text/javascript" gwd-events="support" src="gwd-events-support.1.0.js"></script>
   <script type="text/javascript" gwd-events="handlers">
-    gwd.auto_Ci_voice_controlled_video_1VoiceError = function(event) {
-      // GWD Predefined Function
-      gwd.actions.ciVoiceControlledVideo.stopListening('ci-voice-controlled-video_1');
-    };
     gwd.auto_Gwd_youtube_1Playing = function(event) {
       // GWD Predefined Function
       gwd.actions.ciVoiceControlledVideo.startListening('ci-voice-controlled-video_1');
@@ -174,11 +170,9 @@
     // Support code for event handling in Google Web Designer
      // This script block is auto-generated. Please do not edit!
     gwd.actions.events.registerEventHandlers = function(event) {
-      gwd.actions.events.addHandler('ci-voice-controlled-video_1', 'voiceError', gwd.auto_Ci_voice_controlled_video_1VoiceError, false);
       gwd.actions.events.addHandler('gwd-youtube_1', 'playing', gwd.auto_Gwd_youtube_1Playing, false);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
-      gwd.actions.events.removeHandler('ci-voice-controlled-video_1', 'voiceError', gwd.auto_Ci_voice_controlled_video_1VoiceError, false);
       gwd.actions.events.removeHandler('gwd-youtube_1', 'playing', gwd.auto_Gwd_youtube_1Playing, false);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
@@ -207,7 +201,8 @@
       <div is="gwd-page" id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-div-1f0s" data-gwd-width="970px" data-gwd-height="500px" centered="">
         <div class="gwd-page-content gwd-page-size gwd-div-c5gw">
           <gwd-youtube id="gwd-youtube_1" video-url="fju9ii8YsGs" title="" class="gwd-youtube-1htu" autoplay="standard"></gwd-youtube>
-          <ci-voice-controlled-video id="ci-voice-controlled-video_1" class="gwd-ci-voice-controlled-video-1hhn" data-gwd-name="gwd-youtube_1" video="gwd-youtube_1" playcommands="play" pausecommands="pause" stopcommands="stop" confidencethreshold="20"></ci-voice-controlled-video>
+          <ci-voice-controlled-video id="ci-voice-controlled-video_1" class="gwd-ci-voice-controlled-video-1hhn" data-gwd-name="gwd-youtube_1" video="gwd-youtube_1" playcommands="play, start" pausecommands="pause, wait" stopcommands="stop, quit"
+          confidencethreshold="20" customcommands="replay"></ci-voice-controlled-video>
           <div class="gwd-div-1el0"></div>
           <p class="gwd-p-9wdy gwd-gen-157bgwdanimation">YouTube Voice Command Video</p>
           <p class="gwd-p-fp9j gwd-gen-1c57gwdanimation"><span class="gwd-span-146o">Voice Commands:&nbsp;</span><br>
