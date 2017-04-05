@@ -9,6 +9,12 @@
   <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="9" data-exports-type="gwd-pagedeck">
   <link href="gwddoubleclick_style.css" rel="stylesheet" data-version="14" data-exports-type="gwd-doubleclick">
   <link href="gwdyoutube_style.css" rel="stylesheet" data-version="17" data-exports-type="gwd-youtube">
+  <style type="text/css" id="gwd-center-page-style">#page1 {
+    left: 50%;
+    top: 50%;
+    margin-left: -485px;
+    margin-top: -250px;
+}</style>
   <style type="text/css" id="gwd-lightbox-style">.gwd-lightbox {
     overflow: hidden;
     border: 1px dashed rgb(160, 160, 160);
@@ -226,6 +232,31 @@ body {
   <script data-source="gwddoubleclick_min.js" data-version="14" data-exports-type="gwd-doubleclick" src="gwddoubleclick_min.js"></script>
   <script data-source="gwdyoutube_min.js" data-version="17" data-exports-type="gwd-youtube" src="gwdyoutube_min.js"></script>
   <script data-source="https://www.gstatic.com/ads/ci/voicecontrolledvideo/1/voicecontrolledvideo_min.js" data-exports-type="ci-voice-controlled-video" src="https://www.gstatic.com/ads/ci/voicecontrolledvideo/1/voicecontrolledvideo_min.js"></script>
+  <script type="text/javascript" gwd-events="support" src="gwd-events-support.1.0.js"></script>
+  <script type="text/javascript" gwd-events="handlers">
+    gwd.auto_Ci_voice_controlled_video_1VoiceError = function(event) {
+      // GWD Predefined Function
+      gwd.actions.ciVoiceControlledVideo.stopListening('ci-voice-controlled-video_1');
+    };
+    gwd.auto_Gwd_youtube_1Playing = function(event) {
+      // GWD Predefined Function
+      gwd.actions.ciVoiceControlledVideo.startListening('ci-voice-controlled-video_1');
+    };
+  </script>
+  <script type="text/javascript" gwd-events="registration">
+    // Support code for event handling in Google Web Designer
+     // This script block is auto-generated. Please do not edit!
+    gwd.actions.events.registerEventHandlers = function(event) {
+      gwd.actions.events.addHandler('ci-voice-controlled-video_1', 'voiceError', gwd.auto_Ci_voice_controlled_video_1VoiceError, false);
+      gwd.actions.events.addHandler('gwd-youtube_1', 'playing', gwd.auto_Gwd_youtube_1Playing, false);
+    };
+    gwd.actions.events.deregisterEventHandlers = function(event) {
+      gwd.actions.events.removeHandler('ci-voice-controlled-video_1', 'voiceError', gwd.auto_Ci_voice_controlled_video_1VoiceError, false);
+      gwd.actions.events.removeHandler('gwd-youtube_1', 'playing', gwd.auto_Gwd_youtube_1Playing, false);
+    };
+    document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
+    document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
+  </script>
 </head>
 
 <body>
@@ -245,8 +276,8 @@ body {
       <gwd-metric-event source="gwd-youtube_1" event="previewed75percent" metric="gwd-youtube_1: YouTube preview third quartile"></gwd-metric-event>
       <gwd-metric-event source="gwd-youtube_1" event="previewed100percent" metric="gwd-youtube_1: YouTube preview complete"></gwd-metric-event>
     </gwd-metric-configuration>
-    <div is="gwd-pagedeck" class="gwd-page-container" id="pagedeck">
-      <div is="gwd-page" id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-div-1f0s" data-gwd-width="970px" data-gwd-height="500px">
+    <div is="gwd-pagedeck" class="gwd-page-container" id="pagedeck" data-gwd-offset-top="0px" data-gwd-offset-left="0px">
+      <div is="gwd-page" id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-div-1f0s" data-gwd-width="970px" data-gwd-height="500px" centered="">
         <div class="gwd-page-content gwd-page-size gwd-div-c5gw">
           <gwd-youtube id="gwd-youtube_1" video-url="fju9ii8YsGs" title="" class="gwd-youtube-1htu" autoplay="standard"></gwd-youtube>
           <ci-voice-controlled-video id="ci-voice-controlled-video_1" class="gwd-ci-voice-controlled-video-1hhn" data-gwd-name="gwd-youtube_1" video="gwd-youtube_1" playcommands="play" pausecommands="pause" stopcommands="stop"></ci-voice-controlled-video>

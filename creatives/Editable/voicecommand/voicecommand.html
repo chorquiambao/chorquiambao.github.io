@@ -159,6 +159,31 @@
   <script data-source="gwddoubleclick_min.js" data-version="14" data-exports-type="gwd-doubleclick" src="gwddoubleclick_min.js"></script>
   <script data-source="gwdyoutube_min.js" data-version="17" data-exports-type="gwd-youtube" src="gwdyoutube_min.js"></script>
   <script data-source="https://www.gstatic.com/ads/ci/voicecontrolledvideo/1/voicecontrolledvideo_min.js" data-exports-type="ci-voice-controlled-video" src="https://www.gstatic.com/ads/ci/voicecontrolledvideo/1/voicecontrolledvideo_min.js"></script>
+  <script type="text/javascript" gwd-events="support" src="gwd-events-support.1.0.js"></script>
+  <script type="text/javascript" gwd-events="handlers">
+    gwd.auto_Ci_voice_controlled_video_1VoiceError = function(event) {
+      // GWD Predefined Function
+      gwd.actions.ciVoiceControlledVideo.stopListening('ci-voice-controlled-video_1');
+    };
+    gwd.auto_Gwd_youtube_1Playing = function(event) {
+      // GWD Predefined Function
+      gwd.actions.ciVoiceControlledVideo.startListening('ci-voice-controlled-video_1');
+    };
+  </script>
+  <script type="text/javascript" gwd-events="registration">
+    // Support code for event handling in Google Web Designer
+     // This script block is auto-generated. Please do not edit!
+    gwd.actions.events.registerEventHandlers = function(event) {
+      gwd.actions.events.addHandler('ci-voice-controlled-video_1', 'voiceError', gwd.auto_Ci_voice_controlled_video_1VoiceError, false);
+      gwd.actions.events.addHandler('gwd-youtube_1', 'playing', gwd.auto_Gwd_youtube_1Playing, false);
+    };
+    gwd.actions.events.deregisterEventHandlers = function(event) {
+      gwd.actions.events.removeHandler('ci-voice-controlled-video_1', 'voiceError', gwd.auto_Ci_voice_controlled_video_1VoiceError, false);
+      gwd.actions.events.removeHandler('gwd-youtube_1', 'playing', gwd.auto_Gwd_youtube_1Playing, false);
+    };
+    document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
+    document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
+  </script>
 </head>
 
 <body>
