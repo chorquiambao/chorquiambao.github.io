@@ -8100,3 +8100,8 @@ h4 {
     font-weight: 800;
     margin-bottom: 35px;
 }
+#myModal iframe{
+
+    display: inline-block;
+    float: none;
+}
