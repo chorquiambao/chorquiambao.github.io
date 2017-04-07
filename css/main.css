@@ -3193,7 +3193,7 @@
 
 .content-section9 .single-content h3{
     color: #fff;
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 600; 
     margin: 0;
     position: relative;
@@ -3207,6 +3207,9 @@
     max-width: 335px;
     position: relative;
     z-index: 2;
+}
+content-section9 .single-content h3{
+    font-size: 23px;
 }
 
 /*	content section 10
