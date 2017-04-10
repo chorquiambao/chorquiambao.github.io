@@ -7830,6 +7830,7 @@ hr.shadowDown {
     padding:4px 0 0 0;
     margin-top:22px;
     list-style: none;
+    z-index: 5
 }
 
 .timeline>li:nth-child(even) {
@@ -8097,4 +8098,9 @@ h4 {
 
     display: inline-block;
     float: none;
+}
+
+.animateFromBottom{
+    z-index: 1;
+    opacity: 1
 }

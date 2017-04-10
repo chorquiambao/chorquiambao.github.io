@@ -21,10 +21,10 @@
 
 
         TweenMax.staggerFrom(".animateFromBottom", 1, {
-            ease: Back.easeOut.config(.3),
+            ease: Back.easeOut.config(.3), opacity: 0,
             cycle: {
                 y: function(index) {
-                    return index * 2000;
+                    return index * 500;
                 }
             }
         }, 0.5);
