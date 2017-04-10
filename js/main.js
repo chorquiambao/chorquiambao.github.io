@@ -1,7 +1,7 @@
 (function($) {
     $(window).load(function() {
-        $(".page").css('opacity','1'); 
-
+        
+        $("#loader-wrapper").fadeOut(); 
         TweenMax.staggerFrom(".animateFromRight", 1, {
             ease: Back.easeOut.config(.3),
             cycle: {
