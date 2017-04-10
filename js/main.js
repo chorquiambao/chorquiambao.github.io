@@ -1,5 +1,37 @@
-(function ($) {
-    $(window).load(function () {
+(function($) {
+    $(window).load(function() {
+
+        TweenMax.staggerFrom(".animateFromRight", 1, {
+            ease: Back.easeOut.config(.3),
+            cycle: {
+                x: function(index) {
+                    return index * 700;
+                }
+            }
+        }, 0.2);
+
+        TweenMax.staggerFrom(".animateFromLeft", 1, {
+            ease: Back.easeOut.config(.3),
+            cycle: {
+                x: function(index) {
+                    return index * -700;
+                }
+            }
+        }, 0.2);
+
+
+        TweenMax.staggerFrom(".animateFromBottom", 1, {
+            ease: Back.easeOut.config(.3),
+            cycle: {
+                y: function(index) {
+                    return index * 2000;
+                }
+            }
+        }, 0.5);
+
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
 
         /*  FlexSlide text
         /*----------------------------------------------------*/
@@ -19,7 +51,7 @@
         /*----------------------------------------------------*/
         var dateFinal = '2019/11/01';
 
-        $('.countdown').countdown(dateFinal, function (event) {
+        $('.countdown').countdown(dateFinal, function(event) {
 
             var $this = $(this)
 
@@ -33,7 +65,7 @@
         /*----------------------------------------------------*/
         function iframeModalOpen() {
 
-            $('.modalButton').on('click', function (e) {
+            $('.modalButton').on('click', function(e) {
                 var src = $(this).attr('data-src');
                 var width = $(this).attr('data-width');
                 var height = $(this).attr('data-height');
@@ -46,13 +78,13 @@
                 });
             });
 
-            $('#myModal').on('hidden.bs.modal', function () {
+            $('#myModal').on('hidden.bs.modal', function() {
                 $(this).find('iframe').html("");
                 $(this).find('iframe').attr("src", "");
             });
         }
 
-        $(document).ready(function () {
+        $(document).ready(function() {
             iframeModalOpen();
         });
 
@@ -60,7 +92,7 @@
 
     /*  slideshow1 ( nivo Slider )
     /*----------------------------------------------------*/
-    $(function () {
+    $(function() {
 
         startSlideshow();
 
