@@ -8100,7 +8100,6 @@ h4 {
     float: none;
 }
 
-.animateFromBottom{
-    z-index: 1;
-    opacity: 1
+.page{
+    opacity: 0;
 }
