@@ -1,7 +1,7 @@
 (function($) {
     $(window).load(function() {
-        
-        $("#loader-wrapper").fadeOut(); 
+
+        $("#loader-wrapper").fadeOut();
         TweenMax.staggerFrom(".animateFromRight", 1, {
             ease: Back.easeOut.config(.3),
             cycle: {
@@ -22,7 +22,8 @@
 
 
         TweenMax.staggerFrom(".animateFromBottom", 1, {
-            ease: Back.easeOut.config(.3), opacity: 0,
+            ease: Back.easeOut.config(.3),
+            opacity: 0,
             cycle: {
                 y: function(index) {
                     return index * 500;
