@@ -96,16 +96,11 @@
     /*----------------------------------------------------*/
     $(function() {
 
-        startSlideshow();
-
-    })
-
-    function startSlideshow() {
-
         $('#nivoSlider').nivoSlider({
             effect: 'slideInRight'
         });
 
-    }
+
+    })
 
 })(jQuery);
